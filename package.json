@@ -1,0 +1,22 @@
+{
+  "name": "stoned",
+  "version": "1.0.0",
+  "description": "(stone)d: intelligent granite shop application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deuxfractales/stoned.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deuxfractales/stoned/issues"
+  },
+  "homepage": "https://github.com/deuxfractales/stoned#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
