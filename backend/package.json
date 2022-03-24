@@ -12,6 +12,7 @@
     "dependencies": {
         "@googlemaps/google-maps-services-js": "^3.3.11",
         "axios": "^0.26.1",
+        "dotenv": "^16.0.0",
         "fastify": "^3.23.1",
         "fastify-autoload": "^3.9.0",
         "fastify-static": "^4.5.0",

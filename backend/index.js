@@ -4,6 +4,7 @@ const fastify = require('fastify')({ logger: true })
 const autoload = require('fastify-autoload')
 const path = require('path')
 
+
 fastify.register(autoload, {
     dir: path.join(__dirname, 'services')
 })

@@ -1,17 +1,25 @@
 version: "3"
 services:
-  frontend:
+  frontend-install:
     build: 
-      context: ./frontend
-      dockerfile: Dockerfile.dev
+      context: ./frontend-install
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     volumes:
-      - ./frontend/src:/app/src
+      - ./frontend-install/src:/app/src
+  frontend-template:
+    build: 
+      context: ./frontend-template
+      dockerfile: Dockerfile
+    ports:
+      - "3010:3010"
+    volumes:
+      - ./frontend-template/src:/app/src
   backend:
     build:
       context: ./backend
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
     volumes:
@@ -25,3 +33,7 @@ services:
       - ./mongo:/data/db
     ports:
       - "27017:27017"
+  redis:
+    image: redis:alpine
+    ports:
+      -"6379:6379"
