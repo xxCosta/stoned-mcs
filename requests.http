@@ -1,0 +1,16 @@
+###  ORGINALS
+
+GET https://maps.ottawa.ca/arcgis/rest/services/Municipal_Address/MapServer/0/query?where=1%3D1&outFields=FULLADDR&outSR=4326&f=json
+
+###
+
+
+###BACKEND TEST
+
+GET http://localhost:8080
+
+####POPULATE DB
+GET http://localhost:8080/popDB
+
+
+
