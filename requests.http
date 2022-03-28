@@ -6,11 +6,15 @@ GET https://maps.ottawa.ca/arcgis/rest/services/Municipal_Address/MapServer/0/qu
 
 
 ###BACKEND TEST
-
 GET http://localhost:8080
 
 ####POPULATE DB
 GET http://localhost:8080/popDB
+
+####GET DISTANCES
+GET http://localhost:8080/getDist
+
+####
 
 
 

@@ -26,15 +26,6 @@ services:
       - ./backend:/app
     links:
       - redis
-  mongo:
-    image: mongo:latest
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: test
-      MONGO_INITDB_ROOT_PASSWORD: testpass
-    volumes:
-      - ./mongo:/data/db
-    ports:
-      - "27017:27017"
   redis:
     image: redis:alpine
     ports:
