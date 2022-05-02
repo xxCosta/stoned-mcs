@@ -1,3 +1,18 @@
+
+
+
+
+
+
+### ^^^^^ START HERE ^^^^^^^^
+
+
+### DEPRECATED!!!
+### DEPRECATED!!!
+### DEPRECATED!!!
+### DEPRECATED!!!
+### DEPRECATED!!!
+### DEPRECATED!!!
 ###  ORGINALS
 
 GET https://maps.ottawa.ca/arcgis/rest/services/Municipal_Address/MapServer/0/query?where=1%3D1&outFields=FULLADDR&outSR=4326&f=json
