@@ -2,20 +2,12 @@ version: "3"
 services:
   frontend-install:
     build: 
-      context: ./frontend-install
+      context: ./frontend
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
     volumes:
       - ./frontend-install/src:/app/src
-  frontend-template:
-    build: 
-      context: ./frontend-template
-      dockerfile: Dockerfile
-    ports:
-      - "3010:3010"
-    volumes:
-      - ./frontend-template/src:/app/src
   backend:
     build:
       context: ./backend
