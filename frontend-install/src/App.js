@@ -1,4 +1,6 @@
+import { Loader } from "@googlemaps/js-api-loader"
 import './home.scss';
+
 
 function App() {
   return (
