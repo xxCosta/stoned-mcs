@@ -1,17 +1,22 @@
-import { Loader } from "@googlemaps/js-api-loader"
 import './home.scss';
-
+import {  BrowserRouter as Router, Routes, Route, Link} from "react-router-dom"
+import TemplateHome from "./components/template/TemplateHome"
+import  InstallHome  from './components/install/InstallHome';
 
 function App() {
   return (
-    <div className="App">
-      <div className="container">
-        <div className='fakeBlock'>HI from block</div>
-        <div className='fakeBlock'>HI from block</div>
-        <div className='fakeBlock'>HI from block</div>
-      </div>
-     <p>hello</p> 
-    </div>
+    <Router>
+      <nav>
+       <Link to="/template">Template</Link>
+       <Link to="/install">Install</Link>
+
+      </nav>
+      <Routes>
+        <Route path="/"></Route>
+        <Route path="/template" element={<TemplateHome />}></Route>
+        <Route path="/install" element={<InstallHome />}></Route>
+      </Routes>
+    </Router>
   );
 }
 

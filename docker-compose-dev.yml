@@ -7,7 +7,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./frontend-install/src:/app/src
+      - ./frontend/src:/app/src
   backend:
     build:
       context: ./backend
